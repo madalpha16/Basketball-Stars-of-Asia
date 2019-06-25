@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Engrossed.basket</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <style>
+        .container {
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .header-logo {
+            width: 130px;
+            height: 80px;
+            top: 10%;
+            left: 10%;
+        }
+
+        .jumbotron {
+            background-size: cover;
+            height: 615px;
+            background-color: black
+        }
+
+        .jumbotron .tagline {
+            color: #fff;
+            font-size: 60px;
+            text-shadow: 0 0 10px #000;
+            font-family: 'Anton', sans-serif;
+
+        }
+
+        .jumbotron .lead {
+            color: #ccc;
+        }
+
+        .jumbotron .word {
+            font-family: Microsoft JhengHei;
+            font-size: 28px;
+            width: 94%;
+            margin: auto;
+        }
+
+        .jumbotron [class*="col-"] {
+            background-color: black;
+            height: 615px;
+            padding-top: 135px;
+            padding-bottom: 55px;
+            overflow: auto;
+        }
+
+        .card {
+            background-color: rgba(170, 170, 170, 0.7);
+            width: 100%;
+            height: 530px;
+            padding: 20px 12px 25px 12px;
+            margin-right: 40px;
+            margin-bottom: 76px;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            margin-top: 10%;
+            transition: 0.3s;
+        }
+
+        .card-introduction {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10%;
+            margin-right: 7%;
+            font-family: Microsoft JhengHei;
+            display: none;
+        }
+
+        .card-picture {
+            width: 100%;
+            height: 60%;
+            margin: 0 auto;
+        }
+
+        .card-title {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+            display: block;
+            font-family: Microsoft Jhenghei;
+        }
+
+        .card:hover .card-introduction {
+            display: block;
+        }
+
+        .card:hover .card-picture {
+            display: none;
+        }
+
+        .card:hover .card-title {
+            display: none;
+        }
+
+        .contact-info {
+            max-width: 28vw;
+            font-size: 2.08vw;
+            line-height: 3.47vw;
+            margin-left: 9.79vw;
+            margin-top: 1vw;
+            color: #C4C4C4
+        }
+
+
+        .footer-background {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+
+        .footer-introduction {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+        }
+
+        @media (max-width: 1100px) {
+            .header-logo {
+                width: 70px;
+                height: 40px;
+            }
+
+            .jumbotron .tagline {
+                font-size: 34px;
+            }
+
+            .jumbotron .word {
+                font-size: 22px
+            }
+
+            .card-introduction {
+                font-size: 16px;
+            }
+
+        }
+
+        @media (max-width: 568px) {
+            .header-logo {
+                width: 60px;
+                height: 35px;
+            }
+
+            .jumbotron .tagline {
+                font-size: 24px;
+            }
+
+            .jumbotron .word {
+                font-size: 20px
+            }
+
+            .card-introduction {
+                font-size: 20px;
+            }
+
+        }
+
+        @media(max-width:991){
+            .card-picture {
+                width: 100%;
+                height: 43%;
+                margin: 0 auto;
+        }
+        }
+
+        @media(max-width:767px){
+            .card-picture {
+                width: 41%;
+                height: 60%;
+                margin: 0 30%;
+        }
+        }
+
+        @media(max-width:593px){
+            .card-picture {
+                width: 52%;
+                height: 60%;
+                margin: 0 27%;
+            }
+        }
+
+        @media(max-width:400px){
+            .card-picture {
+                width: 100%;
+                height: 60%;
+                margin: 0 auto;
+            }
+        }
+
+
+        .parallax {
+            background: url('https://www.setaswall.com/wp-content/uploads/2018/07/Basketball-Wallpaper-05-1920x1200.jpg') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+
+        <ul class="nav navbar-nav" style="display: flex;">
+            <li><a href="#BSA">BSA</a></li>
+            <li><a href="#player-card">Player Card</a></li>
+            <li><a href="#about as">About Us</a></li>
+
+    </nav>
+
+
+    <!-- 封面 -->
+    <div class="jumbotron" id="BSA">
+        <div>
+            <div class="col-lg-12">
+                <div class="heading">
+                    <header style=" width:100%; text-align: center; margin:0 auto;color:#ffffff; margin-bottom:1vw">
+                        <img class="header-logo" src="LOGO.png">
+                        <h1 class="tagline">Basketball Stars of Asia </h1>
+                        <p class="word">說到籃球，很多人首先想到的是NBA，卻不知道亞洲也有一群厲害的籃球明星，
+                            他們雖然沒有林書豪有名，卻有著不輸NBA的實力，也是球壇未來的明日之星，讓我們一起用亞洲籃球投出世界的舞台！</p>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div class="container" id="player-card">
+
+            <!-- 球員卡 -->
+            <!-- FIRST ROW -->
+            <div >
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="伊朗(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="伊朗1.png" width="10%" height="5%">&nbsp;伊朗—哈達迪</h2>
+                            </div>
+                            <p class="card-introduction">哈米德·哈達迪（波斯語：حامد حدادی‎，英語：Hamed E.
+                                Haddadi，1985年5月19日－），出生於伊朗胡齊史丹省阿瓦士，伊朗職業籃球運動員，曾效力於美國NBA的曼非斯灰熊、鳳凰城太陽，中國CBA的青島雙星、四川金強等隊。場上場上位置為中鋒，身高2.18米，體重120公斤。
+                                <br>哈達迪是第一位進軍NBA的伊朗運動員，也是繼貝哈德·薩米（Behdad Sami）之後第二位在美國職業聯賽打球的伊朗運動員。</p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="巴勒斯坦(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="巴勒斯坦1.jpg" width="10%" height="5%">&nbsp;巴勒斯坦—桑尼</h2>
+                            </div>
+                            <p class="card-introduction">桑尼·薩卡基尼，出生於1988年8月19日，司職大前鋒，效力於CBA廣州龍獅籃球俱樂部。
+                                <br>對於巴勒斯坦而言，桑尼是不折不扣的籃球第一人，他多次榮膺約旦聯賽籃板王、扣籃王頭銜，併入選最佳陣容。四年前就曾在中國效力的桑尼，對於重回CBA也是充滿信心，目前效力天津榮鋼男籃榮寶支付隊。
+                                <br>2017年6月27日廣州龍獅籃球俱樂部官方對外宣布，球隊與前天津隊亞洲外援、巴勒斯坦名將桑尼·薩卡基尼正式簽約。</p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="韓國(首文) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="韓國1.png" width="10%" height="5%">&nbsp;韓國—金善亨</h2>
+                            </div>
+                            <p class="card-introduction">金善亨綽號韓國小跑車，是2011年韓國職籃KBL的選秀榜眼，今年已經30歲，職業生涯都待在首爾SK騎士隊。
+                                <br>他在菜鳥球季就獲得教練團信任，一共先發了38場比賽，平均上場31.5分鐘可貢獻14.8分3.3助攻2.9籃板。進入第二個賽季，金善亨的得分雖略為下降，不過他把助攻數提升到4.8次，最後更獲選為該年度的例行賽最有價值球員。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND ROW -->
+            <div >
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="台灣 林志傑(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="台灣1.png" width="10%" height="5%">&nbsp;台灣—林志傑</h2>
+                            </div>
+                            <p class="card-introduction">
+                                林志傑（1982年6月11日－），出生於中華民國臺灣花蓮縣，現效力於CBA聯盟的浙江廣廈，場上位置為小前鋒、得分後衛。外號「野獸」、「亞洲第一小前鋒」、「CBA戰神」。曾效力於台灣啤酒籃球隊，並帶領球隊拿下二連霸。
+
+                                <br>林志傑是現今台灣男子籃壇得分能力最強的選手之一，尤以遠距離三分球投射、灌籃、後仰跳投及單打突破能力著稱，是SBL第一屆（2003－2004）及第二屆（2004－2005）的「得分王」，也是隊上的靈魂人物和精神支柱。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="菲律賓(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="菲律賓1.png" width="10%" height="5%">&nbsp;菲律賓—羅密歐</h2>
+                            </div>
+                            <p class="card-introduction">
+                                羅密歐在球場上司職控球後衛，然而傳球並非他的強項，在PBA（菲律賓職業籃球聯賽）6年職業生涯平均每場只能傳出3.7次助攻。不過論得分能力那大概沒有人比得過他，羅密歐在2015-16、16-17球季場均攻下24.8分和23.1分，連續兩季拿下得分王，同時也在這兩年奪下三分球大賽冠軍。能投又能切的他在國內聯賽無人能擋，放到國際賽上也是同樣的情況。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="黎巴嫩(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="黎巴嫩1.png" width="10%" height="5%">&nbsp;黎巴嫩—法迪</h2>
+                            </div>
+                            <p class="card-introduction">法迪·艾爾·卡提布（英語：Fadi El Khatib，阿拉伯語：فادي
+                                الخطيب‎，1979年1月1日－），黎巴嫩職業籃球運動員，身高1米96，現效力於黎巴嫩國內的藍星俱樂部(Blue Stars)，司職鋒衛搖擺人。
+
+                                <br>他是2006年8月日本世錦賽黎巴嫩男子籃球國家隊的成員，卡提布成為這屆錦標賽得分第七多的選手，平均每場得到18分。他在世錦賽中的表現可以影響到整隊的發揮。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIRD ROW -->
+            <div >
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="中國 易建聯(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="中國1.jpg" width="10%" height="5%">&nbsp;中國—易建聯</h2>
+                            </div>
+                            <p class="card-introduction">
+                                易建聯於2002年選入中國男子籃球職業聯賽的廣東宏遠隊及中國國家籃球青年隊，於2004年入選中國國家男子籃球隊。2004年至2006年幫助廣東隊總冠軍三連霸。2005年成為CBA史上最年輕的最有價值球員，當時被視為中國最具有潛力的新人。2007年NBA選秀中被密爾瓦基公鹿以第六順位選中，先後效力於公鹿、籃網、巫師、小牛、湖人等隊，在2012年重新返回廣東東莞銀行隊及幫助廣東隊再獲CBA總冠軍。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="日本2(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="日本1.jpg" width="10%" height="5%">&nbsp;日本—八村壘</h2>
+                            </div>
+                            <p class="card-introduction">
+                                八村壘的媽媽是日本人，爸爸是西非的貝南共和國人，在日本富山縣出生，小學時打了5年棒球，上了國中才開始接觸籃球，2014年他在U17世青對美國單場拿下25分，最後也以場均22.6分的成績，拿下該屆比賽得分王，一戰成名，隨後加入NCAA一級岡薩加大學，大三賽季場均19.7分、6.5籃板，被評價為「日本籃壇救世主」。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 panel-item">
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img class="card-picture" src="日本1(首) 修.png"></img></a>
+                            <div align="center">
+                                <h2 class="card-title"><img src="日本1.jpg" width="10%" height="5%">&nbsp;日本—渡邊雄太</h2>
+                            </div>
+                            <p class="card-introduction">
+                                身高206公分的渡邊雄太主打前鋒，有著相當穩定的三分外圍投射能力和出色的防守，同時還擁有一般亞洲高個子球員沒有的移動能力。渡邊在高中畢業後被喬治華盛頓大學相中，成為日本第四位能夠加入NCAA一級學校的球員。而他在大學期間年年都有長足的進步。大四那年他33場先發出賽，場均攻得16.3分6.1籃板1.6助攻，更難能可貴的是他每場可搧出1.6個火鍋，也讓他獲選為大西洋十校聯盟的年度最佳防守球員。
+                            </p>
+                        </figure>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer-background" id="about as">
+            <div class="container">
+
+                <div class="footer-introduction">
+                    <!-- left footer -->
+                    <div style="width:50%; margin-left: 3vw">
+                        <span style="display: flex;align-items: center; 
+                        justify-content: flex-start; margin-top:5vw">
+                            <img src="LOGO.png" style="width: 10vw; height:auto">
+                            <span style="
+                                margin-left: 1vw;
+                                color: white;
+                                font-size: 2.77vw;
+                                font-family: Microsoft JhengHei;
+                                line-height: 3.47vw; ">
+                                亞洲籃球明星球員<br>
+                                Basketball Stars of Asia
+                            </span>
+                        </span>
+
+                        <p>&nbsp</p>
+                        <span style="
+                            font-size: 2.08vw;
+                            line-height: 3.47vw;
+                            font-family: Microsoft JhengHei;
+                            color: #C4C4C4;">
+                            我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
+                        </span>
+                    </div>
+
+                    <!-- right footer -->
+
+                    <div style="display: flex; position: relative; flex-direction: column">
+                        <div style="margin-left: 9.79vw;
+                                color: white;
+                                font-size: 2.77vw;
+                                font-family: Microsoft JhengHei;
+                                line-height: 3.47vw;">
+                            關於我們
+                        </div>
+
+                        <div style="margin-top: 5vw" class="contact-info">
+                            <a href="https://www.instagram.com/engrossed.basket/" target="_blank"
+                                style="text-decoration: underline; color: #C4C4C4">
+                                IG : engrossed.basket<br>
+                            </a>
+                        </div>
+
+                        <span class="contact-info">
+                            EMAIL : uonline@nccu.edu.tw
+                        </span>
+
+                        <span class="contact-info">
+                            電話 : 02-29387084
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container">
+            <hr>
+            <div >
+                <div class="col-lg-12">
+                    <span style="font-size: 1.1vw;
+                    line-height: 2vw;
+                    color: #fff;">
+                        Copyright © 2019 BSA
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+
+
+        body {
+
+            font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Lucida Grande, Lucida Sans Unicode, sans-serif;
+        }
+
+
+
+        .header-logo {
+            width: 10vx;
+            height: 100px;
+            top: 50px;
+            left: 30px;
+        }
+        
+        .headder {
+            width:100%; 
+            height:650px; 
+            padding-top:60px;
+            background-color: black
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            background-color: #000000;
+            position: relative;
+        }
+
+
+        span {
+            display: inline;
+        }
+
+        @media all and (max-width: 768px) {
+            h1.title {
+                font-size: 28px;
+                width: 95%;
+            }
+        }
+
+
+        .card-flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card-img {
+            width: 100%;
+            margin: 0;
+            margin-top: 50px;
+            transition: 0.3s;
+        }
+
+        .card-img:hover {
+            margin-top: 0px;
+
+        }
+
+        .card {
+            background-color: rgba(170, 170, 170, 0.473);
+            width: 360px;
+            padding: 20px 12px 25px 12px;
+            margin-right: 40px;
+            margin-bottom: 76px;
+        }
+
+
+        .card-title {
+            color: #ffffff;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+
+
+        @media all and (max-width: 768px) {
+            .card {
+                width: 95%;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+         
+        }
+
+
+        a {
+            text-decoration: none;
+        }
+
+ 
+        .contact-info {
+            max-width: 28vw;
+            font-size: 2.08vw;
+            line-height: 3.47vw;
+            margin-left: 9.79vw;
+            margin-top: 1vw;
+            color: #C4C4C4
+        }
+
+
+        .container{
+           
+            margin: 0 auto;
+     
+            font-size: 24px;
+    
+        }
+
+
+        .parallax{
+            background: url('https://www.setaswall.com/wp-content/uploads/2018/07/Basketball-Wallpaper-05-1920x1200.jpg') no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+       
+            <!-- ***重要***header修改 -->
+            <div class="headder">
+                <header style="font-family:fantasy; width:800px; text-align: center; margin:0 auto;color:#ffffff;font-size: 42px">
+                    <img class="header-logo" src="LOGO.png">
+                    <h1>Basketball Stars of Asia </h1>
+                    <p style="font-family:Microsoft JhengHei;font-size: 28px">說到籃球，很多人首先想到的是NBA，卻不知道亞洲也有一群厲害的籃球明星，
+                        他們雖然沒有林書豪有名，卻有著不輸NBA的實力，也是球壇未來的明日之星，讓我們一起用亞洲籃球投出世界的舞台！</p>
+                </header>
+            </div>
+            <!-- ***重要***header修改 -->
+
+
+        <div class="parallax">
+            <!-- flex item 九圖3*3並排 -->
+            <div class="related-block ">
+                <div class="related-text "></div>
+                <div class="card-flex-box ">
+
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="伊朗(首) 修.png" width="100%"></img></a>
+                        </figure>
+
+                        <h2 class="card-title"><img src="伊朗1.png" width="40px">&nbsp;伊朗—哈達迪</h2>
+
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="巴勒斯坦(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="巴勒斯坦1.jpg" width="40px">&nbsp;巴勒斯坦—桑尼</h2>
+                        <p class="card-desc"></p>
+                    </div>
+
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="韓國(首文) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="韓國1.png" width="40px">&nbsp;韓國—金善亨</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                    
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="台灣 林志傑(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="台灣1.png" width="40px">&nbsp;台灣—林志傑</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="菲律賓(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="菲律賓1.png" width="40px">&nbsp;菲律賓—羅密歐</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="黎巴嫩(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="黎巴嫩1.png" width="45px">&nbsp;黎巴嫩—法迪</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="中國 易建聯(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="中國1.jpg" width="45px">&nbsp;中國—易建聯</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="日本2(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="日本1.jpg" width="40px">&nbsp;日本—八村壘</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                    <!-- flex item -->
+                    <div class="card">
+                        <figure class="card-img">
+                            <a href="https://www.google.com/"><img src="日本1(首) 修.png" width="100%"></img></a>
+                        </figure>
+                        <h2 class="card-title"><img src="日本1.jpg" width="40px">&nbsp;日本—渡邊雄太</h2>
+                        <p class="card-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- footer -->
+            <div class="footer">
+                <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw; margin-left: 2.94vw">
+                    <div
+                        style=" position:relative; display: flex; align-items: center; justify-content: flex-start;width: 40vw; margin:0 ">
+                        <img src="LOGO.png" style="width: 10vw; height:auto">
+                        <span style="margin-left: 1vw;
+                            color: white;
+                            font-size: 2.77vw;
+                            line-height: 3.47vw; ">
+                            亞洲籃球明星球員<br>
+                            Basketball Stars of Asia
+                        </span>
+                    </div>
+                    <span style="max-width: 43.81vw; text-align: justify;
+                        font-size: 2.08vw;
+                        line-height: 3.47vw;
+                        margin-top: 2.36vw;
+                        margin-bottom:7.56vw;
+                        color: #C4C4C4 ">
+                        我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
+                    </span>
+                </div>
+                <div class="grey-bar">
+                </div>
+                <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw;">
+                    <div style="margin-left: 9.79vw;
+                        color: white;
+                        font-size: 2.77vw;
+                        line-height: 3.47vw; ">
+                        關於我們
+                    </div>
+
+                    <div style="margin-top: 5vw" class="contact-info">
+                        <a href="https://www.instagram.com/engrossed.basket/" target="_blank"
+                            style="text-decoration: underline; color: #C4C4C4">
+                            IG : engrossed.basket<br>
+                        </a>
+                    </div>
+
+                    <span class="contact-info">
+                        EMAIL : uonline@nccu.edu.tw
+                    </span>
+
+                    <span class="contact-info">
+                        電話 : 02-29387084
+                    </span>
+
+
+                    <span style="font-size: 1.73vw;
+                        line-height: 3,46vw;
+                        color: #C4C4C4;
+                        margin-top: 9.5vw;
+                        margin-left: 20vw">
+                        Copyright © 2019 BSA
+                    </span>
+                </div>
+            </div>
+
+        
+    </div>
+
+</body>
+
+</html>

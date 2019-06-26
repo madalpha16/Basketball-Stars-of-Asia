@@ -1,0 +1,420 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300|Shanti&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Shanti&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Lucida Grande, Lucida Sans Unicode, sans-serif;
+            background-color: #f2f2f2;
+
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .position-absolute {
+            position: absolute;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .intro {
+            width: 62.26vw;
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.22vw;
+            line-height: 4.44vw;
+            color: #515151;
+            text-align: justify;
+        }
+
+        .content {
+            width: 62.26vw;
+            font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Lucida Grande", "Lucida Sans Unicode", "sans-serif";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.85vw;
+            line-height: 4.07vw;
+            color: #515151;
+            text-align: justify;
+        }
+
+        .headphoto {
+            width: 100%;
+            height: auto
+        }
+
+
+        .innerphoto {
+            width: 80%;
+            height: auto;
+        }
+
+        .card-flex-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
+
+        .card {
+            width: 30.39vw;
+        }
+
+        .card-title {
+            font-size: 2.96vw;
+            line-height: 1.48vw;
+            font-weight: bold;
+            color: #BBB7B7;
+            text-align: center;
+        }
+
+        .card-desc {
+            margin-top: 1px;
+            font-size: 4.44vw;
+            line-height: 3.7vw;
+            font-weight: bolder;
+            color: #e01921;
+            text-align: center;
+        }
+
+        .card-photo {
+            width: 674px;
+            height: 354px;
+            background-color: #000000;
+            position: relative;
+        }
+
+        @media(max-width: 420px) {
+            .card-photo {
+                width: 420px;
+                height: 120px;
+            }
+        }
+
+        .cover>img {
+            object-fit: cover;
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+            filter: alpha(opacity=100);
+        }
+
+        .card-name {
+            width: 674px;
+            height: 354px;
+            background-color: lightgray;
+            position: absolute;
+            font-size: 32px;
+            line-height: 50px;
+            /* or 156% */
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .video-container {
+            text-align: center;
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 10px;
+            height: 0;
+            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+
+        }
+
+        .video-container iframe {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+
+        .photo {
+            text-align: center;
+            margin-top: 0.01vw
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .item {
+            flex: 0 32%;
+            height: 100px;
+            margin-bottom: 2%;
+            /* (100-32*3)/2 */
+        }
+
+        .arrow:hover,
+        .arrow:focus,
+        .arrow:active {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .footer {
+            width: 100%;
+            display: flex;
+            background-color: #e01921;
+            position: relative;
+
+        }
+
+        .grey-bar {
+            height: 31vw;
+            width: 0.34vw;
+            margin-left: 11.66vw;
+            margin-top: 4.02vw;
+            background-color: #C4C4C4
+        }
+
+        .contact-info {
+            max-width: 28vw;
+            font-size: 2.08vw;
+            line-height: 3.47vw;
+            margin-left: 9.79vw;
+            margin-top: 1vw;
+            color: #C4C4C4
+        }
+
+
+
+        #backtotop {
+            display: scroll;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+
+        }
+
+        #backtotop:hover {
+            background-color: #555
+        }
+
+        @media(max-width: 420px) {
+            #backtotop {
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    
+
+
+    <div class=position-relative>
+        <div class="position-absolute"
+            style="width:25.3vw; height:6.66vw ;background-color:#e01921; display: flex; justify-content: space-around ;align-items: center; padding:0.4% 1.2% 0.4% 0.4%">
+            <div style="width: 5.21vw; height:5.21vw ;display: flex; align-items: center; justify-content: center">
+                <a href="https://madalpha16.github.io/Basketball-Stars-of-Asia/%E4%BA%9E%E6%B4%B2%E7%B1%83%E7%90%83%E4%B9%8B%E6%98%9F/home/homefinal.html>
+                    <img src="arrow.png" style="width:5.21vw; height:auto" class="arrow">
+                </a>
+            </div>
+            <span style="font-size: 2.1vw; color:rgb(255, 255, 255); display: inline-block;">
+                亞洲籃球明星球員
+            </span>
+        </div>
+        <div class="position-absolute"
+            style="display: flex; align-items: center; justify-content: space-between;width: 25vw; margin-top: 50vw; margin-left: 3vw">
+            <img src="iran-flag.svg" style="width: 10vw; height:auto">
+            <span
+                style="font-size: 4.79vw; font-weight: bolder; color:#e01921; background-color: white; background:rgba(255,255,255,0.6)">
+                桑尼
+            </span>
+        </div>
+        <div class="position-absolute"
+            style="display: flex; align-items: center; justify-content: space-around;width: 25vw; margin-top: 58vw; margin-left: 3vw">
+            <span style="font-size: 1.94vw; font-weight: bolder; color:#e01921; background:rgba(255,255,255,0.6)">
+                巴勒斯坦球員，主打前鋒
+            </span>
+        </div>
+
+        <img src="SaniSakakini-header.jpg" class="headphoto">
+    </div>
+
+    <div class="card-flex-box">
+        <div class="card">
+            <h2 class="card-title">身高</h2>
+            <p class="card-desc">204公分</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">體重</h2>
+            <p class="card-desc">99公斤</p>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title">年齡</h2>
+            <p class="card-desc">31歲</p>
+        </div>
+    </div>
+
+    <figure class="photo">
+        <img src="SaniSakakini-article.jpg" class="innerphoto">
+    </figure>
+
+    <div class="intro" style="margin: 5.93vw auto 2.96vw auto;">
+        本季有在關注SBL的球迷們想必對裕隆洋將桑尼（Sani Sakakini）並不陌生，目前他以平均23.9分暫居聯盟得分王，同時每場還能抓下聯盟第三多的13.6個籃板，表現完全不輸給NBA級別的O.J
+        Mayo。而如果你更早之前就有在關注CBA的話，對於桑尼的實力，想必你一點也不會感到驚訝。
+    </div>
+
+    <div style="width: 8.52vw;
+    height: 0px; border: 1px solid #F0790B; margin: 0 auto 0 auto ">
+    </div>
+
+    <div class="content" style="margin: 2.93vw auto 2.93vw auto;">
+        現年30歲、身高約204公分的桑尼是巴勒斯坦第一個職業籃球員，從2011年開始就在中國討生活，起初他是待在NBL的廣州青年隊，後來被青島雙星隊挖掘，進而成為CBA最偉大的亞洲外援之一。細數桑尼在CBA的5個球季，場均上場38.1分鐘可攻下19.5分，並附帶12.3籃板和2.2助攻，這樣的貢獻度已經與伊朗巨塔哈達迪（Hamed
+        Haddadi）相差無幾。
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/D36zanyq1uY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="content" style=" margin: 2.93vw auto 2.93vw auto">
+        除了打職業聯賽賺錢以外，桑尼其餘的籃球時間都奉獻給了巴勒斯坦國家隊。他在2015年帶領國家隊首度打入FIBA亞錦賽，更在第一場比賽擊敗擁有NBA球員Andray
+        Blatche坐鎮的菲律賓隊，把對方嚇出一身冷汗。巴勒斯坦最後在該屆賽事拿下第九名，桑尼同時也以平均22.4分12.6籃板稱霸當年的亞錦賽，不管是球隊或個人表現都是該屆賽會中的最大驚奇。
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cPUDvyNoNuc" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="content" style="margin: 2.93vw auto 2.93vw auto;">
+        以桑尼的實力，他早就能成為其他國家的規劃球員，並獲得該國家的公民權，讓自己和家人過上更好的生活，然而他至始至終都掛念著自己的國家巴勒斯坦，除了為國家隊招募球員，他也自己出錢替國家興建籃球場館。國家隊教練Jerry
+        Steele稱讚他說：「他沒有離開他的人民，他知道他來自哪裡。他一直在努力幫助巴勒斯坦人民，教導他們關於比賽的內涵，他正試圖改變一種文化。」
+        <br />
+        <br />
+        前南非總統曼德拉所說：「運動具有改變世界的力量，具有鼓舞的力量，具有使人民團結的力量，這種方式堪稱無與倫比。」桑尼在球場上的表現大家有目共睹，更難能可貴的是場下對於祖國無條件的奉獻和回饋，這種高貴情操值得大家的敬重與佩服。
+    </div>
+    <figure class="photo" style="margin-bottom: 10vw">
+        <img src="SaniSakakini-article-2.jpg" class="innerphoto">
+    </figure>
+
+
+    <div class="card-flex-box" style="width:100%">
+        <div class="card-photo cover" style="width:50% ; position:relative">
+            <a class="cover" href="https://www.youtube.com/?gl=TW&hl=zh-TW">
+                <span
+                    style="color: #FFFFFF ;position: absolute;left:26%;top:42%;font-size: 4.44vw;font-weight: bolder">伊朗　法迪</span>
+                <img src="Fadi-header.jpg" width="100%" height="100%">
+            </a>
+        </div>
+
+
+
+        <div class="card-photo cover" style="width:50%">
+            <a class="cover" href="https://www.youtube.com/?gl=TW&hl=zh-TW">
+                <span
+                    style="color: #FFFFFF ;position: absolute;left:23%;top:42%;font-size: 4.44vw; font-weight: bolder">韓國　金善亨</span>
+                <img src="KimSunHyung-header.jpg" width="100%" height="100%">
+            </a>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw; margin-left: 2.94vw">
+            <a href="https://madalpha16.github.io/Basketball-Stars-of-Asia/%E4%BA%9E%E6%B4%B2%E7%B1%83%E7%90%83%E4%B9%8B%E6%98%9F/home/homefinal.html">
+                <div
+                    style=" position:relative; display: flex; align-items: center; justify-content: flex-start;width: 40vw; margin:0 ">
+                    <img src="LOGO.png" style="width: 10vw; height:auto">
+                    <span style="margin-left: 1vw;
+                    color: white;
+                    font-size: 2.77vw;
+                    line-height: 3.47vw; ">
+                        亞洲籃球明星球員<br>
+                        Basketball Stars of Asia
+                    </span>
+                </div>
+            </a>
+            <span style="max-width: 43.81vw; text-align: justify;
+            font-size: 2.08vw;
+            line-height: 3.47vw;
+            margin-top: 2.36vw;
+            margin-bottom:7.56vw;
+            color: #C4C4C4 ">
+                我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
+            </span>
+        </div>
+        <div class="grey-bar">
+        </div>
+        <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw;">
+            <div style="margin-left: 9.79vw;
+            color: white;
+            font-size: 2.77vw;
+            line-height: 3.47vw; ">
+                關於我們
+            </div>
+            <div style="margin-top: 5vw" class="contact-info">
+                <a href="https://www.instagram.com/engrossed.basket/" target="_blank"
+                    style="text-decoration: underline; color: #C4C4C4">
+                    IG : engrossed.basket<br>
+                </a>
+            </div>
+
+            <span class="contact-info">
+                EMAIL : uonline@nccu.edu.tw
+            </span>
+
+            <span class="contact-info">
+                電話 : 02-29387084
+            </span>
+
+
+            <span style="font-size: 1.73vw;
+            line-height: 3,46vw;
+            color: #C4C4C4;
+            margin-top: 9.5vw;
+            margin-left: 20vw">
+                Copyright © 2019 BSA
+            </span>
+        </div>
+    </div>
+
+    <a id="backtotop" href="#">
+        <div>Top</div>
+    </a>
+
+</body>
+
+</html>

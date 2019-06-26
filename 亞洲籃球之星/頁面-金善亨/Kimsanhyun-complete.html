@@ -1,0 +1,489 @@
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300|Shanti&display=swap&subset=chinese-traditional"
+		rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Shanti&display=swap" rel="stylesheet">
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Lucida Grande, Lucida Sans Unicode, sans-serif;
+			background-color: #f2f2f2;
+
+		}
+
+		.position-relative {
+			position: relative;
+		}
+
+		.position-absolute {
+			position: absolute;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.intro {
+			width: 62.26vw;
+			font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 2.22vw;
+			line-height: 4.44vw;
+			color: #515151;
+			text-align: justify;
+		}
+
+		.content {
+			width: 62.26vw;
+			font-family: "Microsoft JhengHei", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Lucida Grande", "Lucida Sans Unicode", "sans-serif";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 1.85vw;
+			line-height: 4.07vw;
+			color: #515151;
+			text-align: justify;
+		}
+
+		.headphoto {
+			width: 100%;
+			height: auto
+		}
+
+
+		.innerphoto {
+			width: 80%;
+			height: auto;
+		}
+
+		.card-flex-box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+		}
+
+		.card {
+			width: 30.39vw;
+		}
+
+		.card-title {
+			font-size: 2.96vw;
+			line-height: 1.48vw;
+			font-weight: bold;
+			color: #BBB7B7;
+			text-align: center;
+		}
+
+		.card-desc {
+			margin-top: 1px;
+			font-size: 4.44vw;
+			line-height: 3.7vw;
+			font-weight: bolder;
+			color: black;
+			text-align: center;
+		}
+
+		.card-photo {
+			width: 674px;
+			height: 354px;
+			background-color: #000000;
+			position: relative;
+		}
+
+		@media(max-width: 420px) {
+			.card-photo {
+				width: 420px;
+				height: 120px;
+			}
+		}
+
+		.cover>img {
+			object-fit: cover;
+			opacity: 0.5;
+		}
+
+		img:hover {
+			opacity: 1.0;
+			filter: alpha(opacity=100);
+		}
+
+		.card-name {
+			width: 674px;
+			height: 354px;
+			background-color: lightgray;
+			position: absolute;
+			font-size: 32px;
+			line-height: 50px;
+			/* or 156% */
+			text-align: center;
+			color: #FFFFFF;
+		}
+
+		.video-container {
+			text-align: center;
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 10px;
+			height: 0;
+			overflow: hidden;
+			max-width: 800px;
+			margin: 0 auto;
+
+		}
+
+		.video-container iframe {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+		}
+
+
+		.photo {
+			text-align: center;
+			margin-top: 0.01vw
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		.item {
+			flex: 0 32%;
+			height: 100px;
+			margin-bottom: 2%;
+			/* (100-32*3)/2 */
+		}
+
+		.arrow:hover,
+		.arrow:focus,
+		.arrow:active {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.footer {
+			width: 100%;
+			display: flex;
+			background-color: #e01921;
+			position: relative;
+
+		}
+
+		.grey-bar {
+			height: 31vw;
+			width: 0.34vw;
+			margin-left: 11.66vw;
+			margin-top: 4.02vw;
+			background-color: #C4C4C4
+		}
+
+		.contact-info {
+			max-width: 28vw;
+			font-size: 2.08vw;
+			line-height: 3.47vw;
+			margin-left: 9.79vw;
+			margin-top: 1vw;
+			color: #C4C4C4
+		}
+
+		#myBtn {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			border: none;
+			outline: none;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 4px;
+		}
+
+		#myBtn:hover {
+			background-color: #555;
+		}
+
+		@media (max-width: 420px) {
+			#myBtn {
+				bottom: 5px;
+				right: 10px;
+				font-size: 12px;
+				padding: 6px;
+				border-radius: 1000px;
+			}
+		}
+
+		#backtotop {
+			display: scroll;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			font-size: 18px;
+			font-weight: bold;
+			border: none;
+			outline: none;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 10px;
+
+		}
+
+		#backtotop:hover {
+			background-color: #555
+		}
+
+		@media(max-width: 420px) {
+			#backtotop {
+				display: none;
+			}
+		}
+
+		.statement {
+			font-size: 1.73vw;
+			line-height: 3, 46vw;
+			color: #C4C4C4;
+			margin-top: 9.5vw;
+			margin-left: 20vw
+		}
+
+		@media(max-width: 420px) {
+			.statement {
+				font-size: 1.73vw;
+				line-height: 3, 46vw;
+				color: #C4C4C4;
+				margin-top: 9.5vw;
+				margin-left: 8vw
+			}
+		}
+
+		@media(max-width: 420px) {
+			.contact-info {
+				max-width: 28vw;
+				font-size: 2.08vw;
+				line-height: 3.47vw;
+				margin-left: 8vw;
+				margin-top: 1vw;
+				color: #C4C4C4
+			}
+		}
+
+		@media(max-width: 420px) {
+			.grey-bar {
+				height: 31vw;
+				width: 0.34vw;
+				margin-left: 9vw;
+				margin-top: 4.02vw;
+				background-color: #C4C4C4
+			}
+		}
+	</style>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+</head>
+
+<body>
+
+	<div class=position-relative>
+		<div class="position-absolute"
+			style="width:25.3vw; height:6.66vw ;background-color:#e01921; display: flex; justify-content: space-around ;align-items: center; padding:0.4% 1.2% 0.4% 0.4%">
+			<div style="width: 5.21vw; height:5.21vw ;display: flex; align-items: center; justify-content: center">
+				<a href="https://madalpha16.github.io/Basketball-Stars-of-Asia/%E4%BA%9E%E6%B4%B2%E7%B1%83%E7%90%83%E4%B9%8B%E6%98%9F/home/homefinal.html">
+					<img src="arrow.png" style="width:5.21vw; height:auto" class="arrow">
+				</a>			</div>
+			<span style="font-size: 2.1vw; color:rgb(255, 255, 255); display: inline-block;">
+				亞洲籃球明星球員
+			</span>
+		</div>
+		<div class="position-absolute"
+			style="display: flex; align-items: center; justify-content: space-between;width: 27vw; margin-top: 53vw; margin-left: 3vw">
+			<img src="Flag_of_South_Korea.svg" style="width: 10vw; height:auto">
+			<span
+				style="font-size: 4.79vw; font-weight: bolder; color:black; background-color: white; background:rgba(255,255,255,0.6)">
+				金善亨
+			</span>
+		</div>
+		<div class="position-absolute"
+			style="display: flex; align-items: center; justify-content: space-around;width: 30vw; margin-top: 61vw; margin-left: 1vw">
+			<span style="font-size: 1.94vw; font-weight: bolder; color:black; background:rgba(255,255,255,0.6)">
+				韓國小跑車，主打控球後衛
+			</span>
+		</div>
+
+		<img src="koreahead.jpg" class="headphoto">
+	</div>
+	<br />
+	<div class="card-flex-box">
+		<div class="card">
+			<h2 class="card-title">身高</h2>
+			<p class="card-desc">187公分</p>
+		</div>
+
+		<div class="card">
+			<h2 class="card-title">體重</h2>
+			<p class="card-desc">78公斤</p>
+		</div>
+
+		<div class="card">
+			<h2 class="card-title">年齡</h2>
+			<p class="card-desc">30歲</p>
+		</div>
+	</div>
+
+
+
+	<div class="intro" style="margin: 5.93vw auto 2.96vw auto;">
+		若要討論誰是亞洲第一控球後衛，大部分球迷都會聯想到中國的郭艾倫、菲律賓的羅密歐，前者具有優異的體能條件，後者則擁有高超的控球技巧，但是就攻防兩端的全面性而言，韓國的金善亨與前述兩位球星相比，絕對是有過之而無不及。
+		<br />
+		<br />
+		<div style="width: 8.52vw;height: 0px; border: 1px solid #F0790B; margin: 0 auto 0 auto ">
+
+		</div class="content" style="margin: 2.93vw auto 2.93vw auto;">
+		<br />
+
+		金善亨綽號韓國小跑車，是2011年韓國職籃KBL的選秀榜眼，今年已經30歲，職業生涯都待在首爾SK騎士隊。他在菜鳥球季就獲得教練團信任，一共先發了38
+		場比賽，平均上場31.5分鐘可貢獻14.8分3.3助攻2.9籃板。進入第二個賽季，金善亨的得分雖略為下降，不過他把助攻數提升到4.8次，最後更獲選為該年度的例行賽最有價值球員。
+	</div>
+
+
+	<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/LV-10p2uxHg" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+
+
+	<div class="content" style="margin: 2.93vw auto 2.93vw auto;">
+		由於金善亨大學畢業才加入職籃，他的成熟度與細膩度都被球隊視為是即戰力，八年職業生涯所繳出的成績其實與新秀球季差別不大，平均每場繳出12.8分4.7助攻3.2籃板。這樣的成績雖然看起來非常不起眼，不過由於韓國注重團隊籃球，一支球隊通常有好幾個射手，各項數據都會被平均瓜分，因此金善亨的表現在國內已經是全明星等級的了。
+		<br />
+		<br />
+		身高187公分主打控球後衛，能投能切又能防守，金善亨的全能身手使他在球場上橫行無阻，因此被選入國家隊是理所當然的事情。他首度入選韓國國家隊是2013年的亞錦賽，不過當年鎂光燈的焦點全在天才射手金敏九一人身上，因此金善亨的表現並不突出。不過他很快地在隔年的籃球世錦賽證明自己，在面對安哥拉與澳洲的比賽中，金善亨在短短不到25分鐘的上場時間，分別拿下15分5助攻和13分3助攻，雖然無法帶領球隊獲勝，不過兩場的得分都是韓國隊最高。
+		<br />
+	</div>
+
+	<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/Pg19qolXA0U" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="content" style=" margin: 2.93vw auto 2.93vw auto">
+		不過金善亨生涯最亮眼的一場國際賽事是在2018年的亞運，當時韓國隊在8強戰遭遇擁有NBA球員Jordan Clarkson助陣的勁敵菲律賓，不過他們靠著歸化洋將Ricardo
+		Ratliffe在對方禁區肆虐，以及金善亨17分7籃板10助攻4抄截的穿針引線，硬是在不被看好的情形之下，以91：82挺進準決賽，也驗證了誰才是韓國隊的真大腿。
+		<br />
+	</div>
+
+
+	<div class="content" style="margin: 2.93vw auto 2.93vw auto;">
+		韓國隊近年來新生代球員輩出，後場有許雄和許訓兩位兄弟檔，鋒線有優質射手全準范和控球前鋒催俊龍，
+		內線還有身高207公分的金鍾奎，韓國在球員養成方面確實有他們的一套。不過現階段他們還是得靠中生代的金善亨，
+		傳承他在場上的經驗與球技，帶領年輕球員儘速成長，才有機會在其他亞洲籃球強權中脫穎而出，再創下一個韓國奇蹟。
+	</div>
+	</div>
+	</br>
+
+
+	<div class="card-flex-box" style="width:100%">
+		<div class="card-photo cover" style="width:50% ; position:relative">
+			<a class="cover" href="https://www.youtube.com/?gl=TW&hl=zh-TW">
+				<span
+					style="color: #FFFFFF ;position: absolute;left:23%;top:42%;font-size: 4.44vw;font-weight: bolder">巴勒斯坦
+					桑尼</span>
+				<img src="Palestine.jpg" width="100%" height="100%">
+			</a>
+		</div>
+
+
+
+		<div class="card-photo cover" style="width:50%">
+			<a class="cover" href="https://www.youtube.com/?gl=TW&hl=zh-TW">
+				<span
+					style="color: #FFFFFF ;position: absolute;left:23%;top:42%;font-size: 4.44vw; font-weight: bolder">台灣　林志傑</span>
+				<img src="Taiwan.jpg" width="100%" height="100%">
+			</a>
+		</div>
+
+
+	</div>
+
+	<div class="footer">
+		<div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw; margin-left: 2.94vw">
+            <a href="https://madalpha16.github.io/Basketball-Stars-of-Asia/%E4%BA%9E%E6%B4%B2%E7%B1%83%E7%90%83%E4%B9%8B%E6%98%9F/home/homefinal.html">
+                <div
+                    style=" position:relative; display: flex; align-items: center; justify-content: flex-start;width: 50vw; margin:0 ">
+                    <img src="LOGO.png" style="width: 10vw; height:auto">
+                    <span style="margin-left: 1vw;
+                    color: white;
+                    font-size: 2.77vw;
+                    line-height: 3.47vw; ">
+                        亞洲籃球明星球員<br>
+                        Basketball Stars of Asia
+                    </span>
+                </div>
+            </a>
+            <span style="max-width: 43.81vw; text-align: justify;
+            font-size: 2.08vw;
+            line-height: 3.47vw;
+            margin-top: 2.36vw;
+            margin-bottom:7.56vw;
+            color: #C4C4C4 ">
+                我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
+            </span>
+        </div>
+		<div class="grey-bar">
+		</div>
+		<div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw;">
+			<div style="margin-left: 9.79vw;
+            color: white;
+            font-size: 2.77vw;
+            line-height: 3.47vw; ">
+				關於我們
+			</div>
+
+			<div style="margin-top: 5vw" class="contact-info">
+				<a href="https://www.instagram.com/engrossed.basket/" target="_blank"
+					style="text-decoration: underline; color: #C4C4C4">
+					IG : engrossed.basket<br>
+				</a>
+			</div>
+
+			<span class="contact-info">
+				EMAIL : uonline@nccu.edu.tw
+			</span>
+
+			<span class="contact-info">
+				電話 : 02-29387084
+			</span>
+
+			<span class="statement">
+				Copyright © 2019 BSA
+			</span>
+
+		</div>
+	</div>
+
+	<a id="backtotop" href="#">
+		<div>Top</div>
+	</a>
+
+</body>
+
+</html>

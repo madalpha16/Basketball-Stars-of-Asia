@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Engrossed.basket</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&amp;display=swap" rel="stylesheet">
+
     <style>
         .container {
             padding-right: 0;
@@ -34,7 +35,6 @@
             font-size: 60px;
             text-shadow: 0 0 10px #000;
             font-family: 'Anton', sans-serif;
-
         }
 
         .jumbotron .lead {
@@ -71,6 +71,8 @@
             margin: 0;
             margin-top: 10%;
             transition: 0.3s;
+            object-fit: cover;
+
         }
 
         .card-introduction {
@@ -85,8 +87,10 @@
 
         .card-picture {
             width: 100%;
-            height: 60%;
             margin: 0 auto;
+            object-fit: cover;
+
+
         }
 
         .card-title {
@@ -170,40 +174,9 @@
                 font-size: 20px;
             }
 
-        }
 
-        @media(max-width:991){
-            .card-picture {
-                width: 100%;
-                height: 43%;
-                margin: 0 auto;
-        }
-        }
 
-        @media(max-width:767px){
-            .card-picture {
-                width: 41%;
-                height: 60%;
-                margin: 0 30%;
         }
-        }
-
-        @media(max-width:593px){
-            .card-picture {
-                width: 52%;
-                height: 60%;
-                margin: 0 27%;
-            }
-        }
-
-        @media(max-width:400px){
-            .card-picture {
-                width: 100%;
-                height: 60%;
-                margin: 0 auto;
-            }
-        }
-
 
         .parallax {
             background: url('https://www.setaswall.com/wp-content/uploads/2018/07/Basketball-Wallpaper-05-1920x1200.jpg') no-repeat center;
@@ -247,11 +220,11 @@
 
             <!-- 球員卡 -->
             <!-- FIRST ROW -->
-            <div >
+            <div>
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
-                            <a href="https://www.google.com/"><img class="card-picture" src="伊朗(首) 修.png"></img></a>
+                            <a href="https://www.google.com/"><img class="card-picture" height="70%" src="伊朗(首) 修.png"></img></a>
                             <div align="center">
                                 <h2 class="card-title"><img src="伊朗1.png" width="10%" height="5%">&nbsp;伊朗—哈達迪</h2>
                             </div>
@@ -281,7 +254,7 @@
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
-                            <a href="https://www.google.com/"><img class="card-picture" src="韓國(首文) 修.png"></img></a>
+                            <a href="https://www.google.com/"><img class="card-picture" src="韓國_金善亨 (裁短).png"></img></a>
                             <div align="center">
                                 <h2 class="card-title"><img src="韓國1.png" width="10%" height="5%">&nbsp;韓國—金善亨</h2>
                             </div>
@@ -295,7 +268,7 @@
             </div>
 
             <!-- SECOND ROW -->
-            <div >
+            <div>
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
@@ -331,7 +304,7 @@
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
-                            <a href="https://www.google.com/"><img class="card-picture" src="黎巴嫩(首) 修.png"></img></a>
+                            <a href="https://www.google.com/"><img class="card-picture" src="黎巴嫩_法迪 (裁短).png"></img></a>
                             <div align="center">
                                 <h2 class="card-title"><img src="黎巴嫩1.png" width="10%" height="5%">&nbsp;黎巴嫩—法迪</h2>
                             </div>
@@ -347,7 +320,7 @@
             </div>
 
             <!-- THIRD ROW -->
-            <div >
+            <div>
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
@@ -381,7 +354,7 @@
                 <div class="col-sm-4 panel-item">
                     <div class="card">
                         <figure class="card-img">
-                            <a href="https://www.google.com/"><img class="card-picture" src="日本1(首) 修.png"></img></a>
+                            <a href="https://www.google.com/"><img class="card-picture" src="日本_渡邊 (裁切).png"></img></a>
                             <div align="center">
                                 <h2 class="card-title"><img src="日本1.jpg" width="10%" height="5%">&nbsp;日本—渡邊雄太</h2>
                             </div>
@@ -403,7 +376,7 @@
 
                 <div class="footer-introduction">
                     <!-- left footer -->
-                    <div style="width:50%; margin-left: 3vw">
+                    <div style="width:50%">
                         <span style="display: flex;align-items: center; 
                         justify-content: flex-start; margin-top:5vw">
                             <img src="LOGO.png" style="width: 10vw; height:auto">
@@ -462,7 +435,7 @@
         <!-- Copyright -->
         <div class="container">
             <hr>
-            <div >
+            <div>
                 <div class="col-lg-12">
                     <span style="font-size: 1.1vw;
                     line-height: 2vw;

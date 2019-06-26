@@ -4,12 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-
-
-
         body {
 
-            font-family: Microsoft JhengHei, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Lucida Grande, Lucida Sans Unicode, sans-serif;
+            font-family: fantasy, Microsoft JhengHei, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Lucida Grande, Lucida Sans Unicode, sans-serif;
         }
 
 
@@ -20,11 +17,11 @@
             top: 50px;
             left: 30px;
         }
-        
-        .headder {
-            width:100%; 
-            height:650px; 
-            padding-top:60px;
+
+        .heading {
+            width: 100%;
+            height: 650px;
+            padding-top: 60px;
             background-color: black
         }
 
@@ -94,7 +91,30 @@
                 font-size: 20px;
             }
 
-         
+        }
+
+        @media all and (max-width: 767px) {
+            .h2 {
+                width: 95%;
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .p {
+                font-size: 20px;
+            }
+
+        }
+
+        @media all and (min-width: 769px){
+
+
+        }
+
+        @media all and (min-width: 1024px){
+        }
+
+        @media all and (min-width: 1440px){
         }
 
 
@@ -102,7 +122,7 @@
             text-decoration: none;
         }
 
- 
+
         .contact-info {
             max-width: 28vw;
             font-size: 2.08vw;
@@ -113,22 +133,21 @@
         }
 
 
-        .container{
-           
+        .container {
+
             margin: 0 auto;
-     
+
             font-size: 24px;
-    
+
         }
 
 
-        .parallax{
+        .parallax {
             background: url('https://www.setaswall.com/wp-content/uploads/2018/07/Basketball-Wallpaper-05-1920x1200.jpg') no-repeat center;
             background-size: cover;
             background-attachment: fixed;
-            
-        }
 
+        }
     </style>
 
 
@@ -137,18 +156,19 @@
 <body>
 
     <div class="container">
-        
-       
-            <!-- ***重要***header修改 -->
-            <div class="headder">
-                <header style="font-family:fantasy; width:800px; text-align: center; margin:0 auto;color:#ffffff;font-size: 42px">
-                    <img class="header-logo" src="LOGO.png">
-                    <h1>Basketball Stars of Asia </h1>
-                    <p style="font-family:Microsoft JhengHei;font-size: 28px">說到籃球，很多人首先想到的是NBA，卻不知道亞洲也有一群厲害的籃球明星，
-                        他們雖然沒有林書豪有名，卻有著不輸NBA的實力，也是球壇未來的明日之星，讓我們一起用亞洲籃球投出世界的舞台！</p>
-                </header>
-            </div>
-            <!-- ***重要***header修改 -->
+
+
+        <!-- ***重要***header修改 -->
+        <div class="heading">
+            <header
+                style="font-family:fantasy; width:100%; text-align: center; margin:0 auto;color:#ffffff;font-size: 42px">
+                <img class="header-logo" src="LOGO.png">
+                <h1>Basketball Stars of Asia </h1>
+                <p style="font-family:Microsoft JhengHei;font-size: 28px">說到籃球，很多人首先想到的是NBA，卻不知道亞洲也有一群厲害的籃球明星，
+                    他們雖然沒有林書豪有名，卻有著不輸NBA的實力，也是球壇未來的明日之星，讓我們一起用亞洲籃球投出世界的舞台！</p>
+            </header>
+        </div>
+        <!-- ***重要***header修改 -->
 
 
         <div class="parallax">
@@ -185,7 +205,7 @@
                     </div>
                     <!-- flex item -->
                     <div class="card">
-                    
+
                         <figure class="card-img">
                             <a href="https://www.google.com/"><img src="台灣 林志傑(首) 修.png" width="100%"></img></a>
                         </figure>
@@ -237,66 +257,67 @@
         </div>
 
 
-            <!-- footer -->
-            <div class="footer">
-                <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw; margin-left: 2.94vw">
-                    <div
-                        style=" position:relative; display: flex; align-items: center; justify-content: flex-start;width: 40vw; margin:0 ">
-                        <img src="LOGO.png" style="width: 10vw; height:auto">
-                        <span style="margin-left: 1vw;
+        <!-- footer -->
+        <div class="footer">
+            <div
+                style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw; margin-left: 2.94vw">
+                <div
+                    style=" position:relative; display: flex; align-items: center; justify-content: flex-start;width: 40vw; margin:0 ">
+                    <img src="LOGO.png" style="width: 10vw; height:auto">
+                    <span style="margin-left: 1vw;
                             color: white;
                             font-size: 2.77vw;
                             line-height: 3.47vw; ">
-                            亞洲籃球明星球員<br>
-                            Basketball Stars of Asia
-                        </span>
-                    </div>
-                    <span style="max-width: 43.81vw; text-align: justify;
+                        亞洲籃球明星球員<br>
+                        Basketball Stars of Asia
+                    </span>
+                </div>
+                <span style="max-width: 43.81vw; text-align: justify;
                         font-size: 2.08vw;
                         line-height: 3.47vw;
                         margin-top: 2.36vw;
                         margin-bottom:7.56vw;
                         color: #C4C4C4 ">
-                        我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
-                    </span>
-                </div>
-                <div class="grey-bar">
-                </div>
-                <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw;">
-                    <div style="margin-left: 9.79vw;
+                    我們是由一位熱愛籃球，一位還算喜歡籃球，以及三位沒那麼常看籃球但有對寫網站有熱情的同學組成。我們努力生出一串串code，就為了向你介紹這些籃球明星，以及呈現法賢教了我們一學期的html。
+                </span>
+            </div>
+            <div class="grey-bar">
+            </div>
+            <div style="display: flex; position: relative; flex-direction: column; margin-top:6.18vw;">
+                <div style="margin-left: 9.79vw;
                         color: white;
                         font-size: 2.77vw;
                         line-height: 3.47vw; ">
-                        關於我們
-                    </div>
+                    關於我們
+                </div>
 
-                    <div style="margin-top: 5vw" class="contact-info">
-                        <a href="https://www.instagram.com/engrossed.basket/" target="_blank"
-                            style="text-decoration: underline; color: #C4C4C4">
-                            IG : engrossed.basket<br>
-                        </a>
-                    </div>
+                <div style="margin-top: 5vw" class="contact-info">
+                    <a href="https://www.instagram.com/engrossed.basket/" target="_blank"
+                        style="text-decoration: underline; color: #C4C4C4">
+                        IG : engrossed.basket<br>
+                    </a>
+                </div>
 
-                    <span class="contact-info">
-                        EMAIL : uonline@nccu.edu.tw
-                    </span>
+                <span class="contact-info">
+                    EMAIL : uonline@nccu.edu.tw
+                </span>
 
-                    <span class="contact-info">
-                        電話 : 02-29387084
-                    </span>
+                <span class="contact-info">
+                    電話 : 02-29387084
+                </span>
 
 
-                    <span style="font-size: 1.73vw;
+                <span style="font-size: 1.73vw;
                         line-height: 3,46vw;
                         color: #C4C4C4;
                         margin-top: 9.5vw;
                         margin-left: 20vw">
-                        Copyright © 2019 BSA
-                    </span>
-                </div>
+                    Copyright © 2019 BSA
+                </span>
             </div>
+        </div>
 
-        
+
     </div>
 
 </body>
